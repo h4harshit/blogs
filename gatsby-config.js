@@ -17,6 +17,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'post',
+        path: `${__dirname}/blogs`,
+      },
+    },
+    'gatsby-transformer-remark'
   ],
 }

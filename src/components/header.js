@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
   display: flex;
-  background: #8c2b5e;
+  background: #e67070;
   height: 5rem;
   padding-top: 1.5rem;  
   margin-bottom: 2rem;
