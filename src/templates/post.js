@@ -15,6 +15,7 @@ const Title = styled.h1`
 
 const PostContent = styled.div`
   margin-top: 1rem;
+  text-align: justify;
 `
 
 const Post = props => {
