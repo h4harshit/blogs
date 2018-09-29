@@ -5,14 +5,30 @@ series: "Apache Kafka"
 keywords: "Apache Kafka"
 category: "Technical"
 ---
+# Apache kafka - An introduction
+
+## Objective 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam maecenas sed enim ut sem. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Nisl vel pretium lectus quam. Quam vulputate dignissim suspendisse in. Iaculis nunc sed augue lacus viverra vitae congue eu consequat. Pretium aenean pharetra magna ac placerat vestibulum lectus. Magna etiam tempor orci eu lobortis elementum nibh. At auctor urna nunc id cursus metus. Tellus in hac habitasse platea dictumst vestibulum.
+## Apache kafka 
 
-Sit amet massa vitae tortor condimentum lacinia quis vel. Faucibus et molestie ac feugiat sed lectus. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Risus sed vulputate odio ut enim blandit volutpat maecenas. Erat nam at lectus urna duis convallis. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Neque sodales ut etiam sit amet nisl. Mattis enim ut tellus elementum. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Orci nulla pellentesque dignissim enim sit amet. Nisl nisi scelerisque eu ultrices. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Quis vel eros donec ac odio tempor orci dapibus. Massa sed elementum tempus egestas sed sed risus pretium. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Pharetra pharetra massa massa ultricies mi quis. Neque viverra justo nec ultrices dui sapien.
+Apache kafka is a distributed streaming plattform. (From https://kafka.apache.org/intro). To be able to understand this statement, we should be able to understand two key words here: "Distributed" & "Streaming".
 
-Pellentesque elit eget gravida cum sociis natoque penatibus. Faucibus pulvinar elementum integer enim. Ultricies mi eget mauris pharetra et ultrices neque. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Dui faucibus in ornare quam viverra orci sagittis. Semper auctor neque vitae tempus quam. Felis donec et odio pellentesque diam volutpat commodo sed. Nulla facilisi cras fermentum odio eu feugiat. Mauris rhoncus aenean vel elit scelerisque. Tortor dignissim convallis aenean et. Nunc mattis enim ut tellus elementum sagittis vitae et leo. Ultricies integer quis auctor elit sed vulputate mi sit amet. Pharetra massa massa ultricies mi quis hendrerit. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Viverra ipsum nunc aliquet bibendum enim facilisis gravida. Facilisis gravida neque convallis a cras semper auctor neque. Tortor dignissim convallis aenean et tortor. Amet consectetur adipiscing elit duis tristique sollicitudin nibh.
+I will not go deep into these terms as of now, but let's see a very simple example usage of Kafka.  Kafka is used to build a data pipeline between two applications. Let's say there are two applications i.e. Order processing & Inventory maintenence. Kafka can be used act as a medium of commiunication between these two applications. 
 
-Nibh mauris cursus mattis molestie a iaculis at erat. Egestas congue quisque egestas diam in arcu cursus euismod. Turpis massa tincidunt dui ut ornare lectus sit amet. Augue lacus viverra vitae congue eu consequat ac. Donec ac odio tempor orci dapibus ultrices. Sed tempus urna et pharetra pharetra. Elementum nibh tellus molestie nunc non blandit massa enim nec. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Vitae semper quis lectus nulla at volutpat diam ut. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Eget magna fermentum iaculis eu non diam.
+![alt text][logo]
 
-Felis donec et odio pellentesque diam volutpat. Sit amet nisl purus in mollis nunc. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Consequat semper viverra nam libero justo laoreet. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Urna neque viverra justo nec ultrices dui. Sed velit dignissim sodales ut eu sem integer vitae. Purus in massa tempor nec feugiat nisl. Potenti nullam ac tortor vitae. Tortor at auctor urna nunc. Faucibus ornare suspendisse sed nisi. Euismod elementum nisi quis eleifend quam adipiscing. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Ultrices dui sapien eget mi proin sed libero enim sed. Nunc consequat interdum varius sit amet mattis. Diam vulputate ut pharetra sit amet aliquam id diam. Commodo nulla facilisi nullam vehicula. Nisl purus in mollis nunc.
+![alt text](https://github.com/h4harshit/blogs/blob/master/blogs/apache-kafka/img/apache-kafka-1.jpg "Apache kafka")
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+[logo]: https://github.com/h4harshit/blogs/blob/master/blogs/apache-kafka/img/apache-kafka-1.jpg "Apache kafka"
+
+In the above example, both the applications are able to send messages to each other thru kafka. There are various ways which can be used for facilating communication between applications, and you shouldn't be using kafka for implementing every communication between two or more applications. Kafka is best suited as a `messaging queue` or `messaging system`. In my opinion kafka is for near real-time communication. Wherever you want synchronous communication for example in any banking applications where you are performing a transaction and the amount should be reflected in your account real time, in those scenarios Apache kafka may not be best suited.
+
+Now let's try to understand what do we mean when we say that Apache Kafka is a distributed system. A distributed system can be viewed as the interconnections of several heterogeneous subsystems. When we are using Apache Kafka then essentially the data will be written (Producers) to Kafka and some other applications (Consumers) will read the data from Apache Kafka. 
+
+Writing the streams of data into Apache kafka and reading streams out of Apache kafka is distributed. That will mean that multiple streams can be written into Apache Kafka simultaneously and there are provisions by which reading & processing of those streams are also distributed. 
+
+
+
