@@ -5,7 +5,11 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 
 const Date = styled.span`
-color: #bbb;
+  color: #bbb;
+`
+
+const Excerpt = styled.p`
+  text-align: justify;
 `
 
 export default ({ data }) => {
@@ -23,11 +27,9 @@ export default ({ data }) => {
             >
               <h3>
                 {node.frontmatter.title}{' '}
-                <Date>
-                &mdash; {node.frontmatter.date}
-                </Date>
+                <Date>&mdash; {node.frontmatter.date}</Date>
               </h3>
-              <p>{node.excerpt}</p>
+              <Excerpt>{node.excerpt}</Excerpt>
             </Link>
           </div>
         ))}
