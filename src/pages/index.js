@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { css } from 'react-emotion'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import theme from '../../config/Theme'
 
 // const Date = styled.span`
 //   color: #bbb;
@@ -19,7 +20,7 @@ const BlogContainer = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 11rem;
-  transition: 1s ease;
+  transition: ${theme.transitions.normal};
   border-radius: .4rem;
   &:hover {
     transform: scale(1.015);
@@ -30,6 +31,11 @@ const BlogContainer = styled.div`
 const Blog = styled.div`
   width: 80%;
 `
+
+const H3 = styled.h3`
+  color: ${theme.colors.primary};
+`
+
 
 export default ({ data }) => {
   return (
@@ -47,10 +53,10 @@ export default ({ data }) => {
                     padding: 0 2rem;
                   `}
                 >
-                  <h3>
+                  <H3>
                     {node.frontmatter.title}{' '}
                     {/* <Date>&mdash; {node.frontmatter.date}</Date> */}
-                  </h3>
+                  </H3>
                   <Excerpt>{node.excerpt}</Excerpt>
                 </Link>
               </Blog>

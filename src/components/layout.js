@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import theme from '../../config/Theme'
 
 import Header from './header'
 import './layout.css'
 
 const LayoutContainer = styled.div`
-  background-color: #eeeeee;
+  background-color: ${theme.colors.bg};
 `
 
 const Layout = ({ children }) => (
