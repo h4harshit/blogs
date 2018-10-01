@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'blogs.h4harshit',
+    siteUrl: "https://blogs.h4harshit.com/",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -25,6 +26,7 @@ module.exports = {
         path: `${__dirname}/blogs`,
       },
     },
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sitemap',
   ],
 }

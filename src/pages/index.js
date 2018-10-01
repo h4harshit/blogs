@@ -4,21 +4,27 @@ import { css } from 'react-emotion'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 
-const Date = styled.span`
-  color: #bbb;
-`
+// const Date = styled.span`
+//   color: #bbb;
+// `
 
 const Excerpt = styled.p`
   text-align: justify;
 `
 
 const BlogContainer = styled.div`
-  background-color: #eeeeee;
+  background-color: white;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 11rem;
+  min-height: 11rem;
+  transition: 1s ease;
+  border-radius: .4rem;
+  &:hover {
+    transform: scale(1.015);
+    cursor: pointer;
+  }
 `
 
 const Blog = styled.div`
