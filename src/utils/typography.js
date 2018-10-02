@@ -13,16 +13,6 @@ const typography = new Typography({
       marginLeft: 0,
       paddingLeft: `calc(${rhythm(1 / 2)} - 1px)`,
     }
-
-    // blockquote: {
-    //     borderLeft: `4px solid ${gray(87)}`,
-    //     color: gray(47),
-    //     marginTop: 0,
-    //     marginRight: 0,
-    //     marginLeft: 0,
-    //     paddingLeft: `calc(${rhythm(1 / 2)} - 1px)`,
-    //     paddingRight: `10px`
-    //   }
   }),
 })
 
