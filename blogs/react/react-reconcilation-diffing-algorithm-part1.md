@@ -56,4 +56,4 @@ Virtual DOM is kept in memory so it is easily accessible and operations & compar
 
 The process or the algorithm which react uses to identify the difference of the new virtual DOM (because of the state changes of react elements) as compared to the existing virtual DOM is called as `Reconciliation`. 
 
-We will discuss more about reconciliation and define algorithm in the next article. 
+We will discuss more about reconciliation and define algorithm in the next article. Please follow this [link](https://blogs.h4harshit.com/react/react-reconcilation-diffing-algorithm-part2/) to go to part 2 of this article. 
