@@ -13,7 +13,9 @@ I am going to divide the talk about reconciliation into two articles and let me 
 Then in the next article we will talk about the idea behind reconciliation, what is Diffing algorithm and how does it work. With said that let's start with the discussion. 
 DOM stands for document object model. When a browser display a web page it'll be creating a document object model of the page. Document object model is nothing but a programming API for HTML and XML documents. It represents the logical structure of the document and the way the document should be accessed and manipulated. When we talk about the web page we are essentially are talking about the HTML document. You can also visualize an HTML DOM as a tree of objects.
 
-<< Image here>> 
+
+![alt text](https://raw.githubusercontent.com/h4harshit/blogs/master/blogs/react/img/DocumentObjectModel.png "React Reconcilation & Diffing algorithm")
+
 
 The DOM represented in the above diagram is for the following HTML: 
 
