@@ -3,14 +3,16 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import theme from '../../config/Theme'
 
 const Content = styled.article`
   padding: 1rem 2rem;
   background-color: white;
 `
 
-const Title = styled.h1`
+const Title = styled.h2`
   margin-bottom: 1rem;
+  color: ${theme.colors.primary};
 `
 
 const PostContent = styled.div`
