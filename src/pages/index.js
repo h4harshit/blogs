@@ -19,13 +19,13 @@ const BlogContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 11rem;
-  transition: ${theme.transitions.normal};
+  // min-height: 11rem;
+  // transition: ${theme.transitions.normal};
   border-radius: .4rem;
-  &:hover {
-    transform: scale(1.015);
-    cursor: pointer;
-  }
+  // &:hover {
+  //   transform: scale(1.015);
+  //   cursor: pointer;
+  // }
 `
 
 const Blog = styled.div`

@@ -1,30 +1,29 @@
-import Typography from "typography"
-//import bootstrapTheme from "typography-theme-bootstrap"
-
-//const typography = new Typography(bootstrapTheme)
+import Typography from 'typography'
+import gray from 'gray-percentage'
 
 const typography = new Typography({
-    baseFontSize: '18px',
-    baseLineHeight: 1.66,
-    scaleRatio: 3.157,
-    headerFontFamily: ['sans-serif'],
-    bodyFontFamily: ['Open Sans', 'sans-serif'],
-    headerWeight: 700,
-    googleFonts: [
-      {
-        name: 'sans-serif',
-        styles: ['700'],
-      },
-      {
-        name: 'Open Sans',
-        styles: ['400'],
-      },
-    ],
-  });
+  baseFontSize: '18px',
+  overrideStyles: ({ rhythm }) => ({
+    blockquote: {
+      borderLeft: `4px solid ${gray(87)}`,
+      color: gray(47),
+      marginTop: 0,
+      marginRight: 0,
+      paddingRight: `10px`,
+      marginLeft: 0,
+      paddingLeft: `calc(${rhythm(1 / 2)} - 1px)`,
+    }
 
-  // Hot reload typography in development.
-if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles();
-}
+    // blockquote: {
+    //     borderLeft: `4px solid ${gray(87)}`,
+    //     color: gray(47),
+    //     marginTop: 0,
+    //     marginRight: 0,
+    //     marginLeft: 0,
+    //     paddingLeft: `calc(${rhythm(1 / 2)} - 1px)`,
+    //     paddingRight: `10px`
+    //   }
+  }),
+})
 
 export default typography
