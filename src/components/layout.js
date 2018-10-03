@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'google-site-verification', content: 'fWMXXLKiaIWGo4gfO5EbkrptMQV5m1KW8G0U4xBSEec' },
+            { name: 'google-site-verification', content: 'ElZeFHq-RgslO5jscKZ3Z2XrUVV84Oo_Z_pkn8tDpj4' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
