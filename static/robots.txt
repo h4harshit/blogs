@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://blogs.h4harshit.com/sitemap.xml
+Host: https://blogs.h4harshit.com
