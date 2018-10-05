@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'blogs.h4harshit',
-    siteUrl: "https://blogs.h4harshit.com/",
+    siteUrl: 'https://blogs.h4harshit.com/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -33,6 +33,18 @@ module.exports = {
       options: {
         pathToConfigModule: 'src/utils/typography.js',
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-127073716-1',
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+      },
+    },
   ],
 }
