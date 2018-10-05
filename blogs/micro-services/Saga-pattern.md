@@ -25,9 +25,8 @@ Here comes Saga pattern into picture. Saga is a sequence of local transactions. 
 
 Please see the below diagram for the sequence of local transactions to process the order from a customer - 
 
-<< Image here >>
 
-![alt text](https://raw.githubusercontent.com/h4harshit/blogs/master/blogs/apache-kafka/img/apache-kafka.png "Apache Kafka")
+![alt text](https://raw.githubusercontent.com/h4harshit/blogs/master/blogs/micro-services/img/saga-pattern-all-success.png "Saga pattern - all success")
 
 
 
@@ -38,9 +37,8 @@ Of course, in this example we have only talked about the successful case. We are
 
 Let's take an example where payment processing was not successful.  
 
-<< Image here >>
 
-![alt text](https://raw.githubusercontent.com/h4harshit/blogs/master/blogs/apache-kafka/img/apache-kafka.png "Apache Kafka")
+![alt text](https://raw.githubusercontent.com/h4harshit/blogs/master/blogs/micro-services/img/saga-pattern-unsuccessfull-local-txn.png "Saga pattern - when local transaction fails.")
 
 In this case a local transaction will be performed by the inventory micro-service for reversal of the reservation transaction. This is how a failure of a local transaction is handled in the Saga Design pattern. 
 
