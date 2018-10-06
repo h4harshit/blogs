@@ -1,6 +1,6 @@
 ---
 date: "2018-10-06"
-title: "Event soucring pattern | Persist the state of a business entity as events "
+title: "Event sourcing pattern | Persist the state of a business entity as events "
 series: "Micro-services"
 keywords: "Micro-services, Event sourcing, Distributed business transaction"
 category: "Technical"
