@@ -10,7 +10,7 @@ const Content = styled.article`
   background-color: white;
 `
 
-const Title = styled.h2`
+const Title = styled.h3`
   margin-bottom: 1rem;
   color: ${theme.colors.primary};
 `

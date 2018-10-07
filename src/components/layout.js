@@ -6,7 +6,7 @@ import styled , { injectGlobal } from 'styled-components'
 import theme from '../../config/Theme'
 
 import Header from './header'
-import './layout.css'
+// import './layout.css'
 
 injectGlobal`
   ::selection {

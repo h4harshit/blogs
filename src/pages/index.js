@@ -21,6 +21,7 @@ const Blog = styled.div`
 `
 const H3 = styled.h3`
   color: ${theme.colors.primary};
+  margin-bottom: 0;
 `
 
 export default ({ data }) => {
@@ -36,15 +37,15 @@ export default ({ data }) => {
                   className={css`
                     text-decoration: none;
                     color: inherit;
-                    padding: 0 2rem;
+                    padding: 0 0.5rem;
                   `}
                 >
                   <H3>
                     {node.frontmatter.title}{' '}
                     {/* <Date>&mdash; {node.frontmatter.date}</Date> */}
                   </H3>
-                  <Excerpt>{node.excerpt}</Excerpt>
                 </Link>
+                <Excerpt>{node.excerpt}</Excerpt>
               </Blog>
             </BlogContainer>
           </div>
