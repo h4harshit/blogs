@@ -1,5 +1,4 @@
 import Typography from 'typography'
-import gray from 'gray-percentage'
 const config = require("../../config/SiteConfig")
 
 const typography = new Typography({

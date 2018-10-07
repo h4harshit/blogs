@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled , { injectGlobal } from 'styled-components'
 import theme from '../../config/Theme'
 import Header from './header'
+import Footer from './footer'
 
 
 injectGlobal`
@@ -63,6 +64,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
+        <Footer />
       </LayoutContainer>
     )}
   />
