@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from '../../config/Theme'
 import '../utils/prismjs-theme.css'
+import { media } from '../utils/media'
+import SEO from  '../components/SEO'
 
 const Content = styled.article`
   padding: 1rem 2rem;
@@ -14,19 +16,33 @@ const Content = styled.article`
 const Title = styled.h3`
   margin-bottom: 1rem;
   color: ${theme.colors.primary};
+  @media ${media.phone} {
+    font-size: 14px;
+  }
+  @media ${media.tablet} {
+    font-size: 18px;
+  }
 `
 
 const PostContent = styled.div`
   margin-top: 1rem;
   text-align: justify;
+  @media ${media.phone} {
+    font-size: 14px;
+  }
+  @media ${media.tablet} {
+    font-size: 18px;
+  }
 `
 
 const Post = props => {
+  const { slug } = props.pageContext;
   const postNode = props.data.markdownRemark
   const post = postNode.frontmatter
 
   return (
     <Layout>
+      <SEO postPath={slug} postNode={postNode} postSEO />
       <Content>
         <Title>{post.title}</Title>
         {post.date} &mdash; {postNode.timeToRead} mins read

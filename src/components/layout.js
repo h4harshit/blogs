@@ -6,6 +6,7 @@ import styled , { injectGlobal } from 'styled-components'
 import theme from '../../config/Theme'
 import Header from './header'
 import Footer from './footer'
+import SEO from './SEO'
 
 
 injectGlobal`
@@ -53,6 +54,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <SEO />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
