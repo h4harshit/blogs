@@ -5,37 +5,23 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import theme from '../../config/Theme'
 
-// const Date = styled.span`
-//   color: #bbb;
-// `
-
 const Excerpt = styled.p`
   text-align: justify;
 `
-
 const BlogContainer = styled.div`
   background-color: white;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  // min-height: 11rem;
-  // transition: ${theme.transitions.normal};
   border-radius: .4rem;
-  // &:hover {
-  //   transform: scale(1.015);
-  //   cursor: pointer;
-  // }
 `
-
 const Blog = styled.div`
   width: 80%;
 `
-
 const H3 = styled.h3`
   color: ${theme.colors.primary};
 `
-
 
 export default ({ data }) => {
   return (

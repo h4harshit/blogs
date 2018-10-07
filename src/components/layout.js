@@ -2,11 +2,30 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
+import styled , { injectGlobal } from 'styled-components'
 import theme from '../../config/Theme'
 
 import Header from './header'
 import './layout.css'
+
+injectGlobal`
+  ::selection {
+    color: ${theme.colors.bg};
+    background: ${theme.colors.primary};
+  }
+  blockquote {
+    font-style: italic;
+    position: relative;
+  }
+  blockquote:before {
+    content: "";
+    position: absolute;
+    background: ${theme.colors.primary};
+    height: 100%;
+    width: 6px;
+    margin-left: -1.6rem;
+  }
+  `
 
 const LayoutContainer = styled.div`
   background-color: ${theme.colors.bg};

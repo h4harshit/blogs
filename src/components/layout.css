@@ -435,7 +435,7 @@ fieldset {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-blockquote {
+/* blockquote {
   margin-left: 1.45rem;
   margin-right: 1.45rem;
   margin-top: 0;
@@ -444,7 +444,7 @@ blockquote {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 form {
   margin-left: 0;
   margin-right: 0;
@@ -529,9 +529,9 @@ li > ul {
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
-blockquote *:last-child {
+/* blockquote *:last-child {
   margin-bottom: 0;
-}
+} */
 li *:last-child {
   margin-bottom: 0;
 }
