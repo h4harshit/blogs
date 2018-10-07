@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from '../../config/Theme'
+import '../utils/prismjs-theme.css'
 
 const Content = styled.article`
   padding: 1rem 2rem;

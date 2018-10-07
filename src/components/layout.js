@@ -4,9 +4,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled , { injectGlobal } from 'styled-components'
 import theme from '../../config/Theme'
-
 import Header from './header'
-// import './layout.css'
+
 
 injectGlobal`
   ::selection {
