@@ -7,7 +7,7 @@ const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #e67070;
+  background: ${theme.colors.primary};
   height: 9rem;
   color: ${theme.colors.bg}
 `

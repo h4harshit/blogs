@@ -16,7 +16,7 @@ const Content = styled.article`
   background-color: ${theme.colors.white};;
 `
 
-const Title = styled.h3`
+const Title = styled.h4`
   margin-bottom: 1rem;
   padding-top: 2rem;
   color: ${theme.colors.primary};

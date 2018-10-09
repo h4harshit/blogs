@@ -42,14 +42,18 @@ const BlogContainer = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 0.4rem;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 `
 const Blog = styled.div`
   width: 80%;
 `
-const H3 = styled.h3`
+const H4 = styled.h4`
   color: ${theme.colors.primary};
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+`
+
+const Title = styled.div`
+border-bottom: 4px solid ${theme.colors.grey_shade_1};
 `
 
 const NavLink = props => {
@@ -91,10 +95,10 @@ export default ({ data, pageContext }) => {
                     padding: 0 0.5rem;
                   `}
                 >
-                  <H3>
-                    {node.frontmatter.title}{' '}
+                  <Title>
+                    <H4>{node.frontmatter.title} </H4>
                     {/* <Date>&mdash; {node.frontmatter.date}</Date> */}
-                  </H3>
+                  </Title>
                 </Link>
                 <Excerpt>{node.excerpt}</Excerpt>
               </Blog>

@@ -1,6 +1,6 @@
 module.exports = {
-  headerFontFamily: 'Open Sans',
-  bodyFontFamily: 'Arial',
+  headerFontFamily: '-apple-system, Roboto, Helvetica',
+  bodyFontFamily: '-apple-system, Roboto, Helvetica',
   baseFontSize: '18px',
 
   pathPrefix: '/',
@@ -13,3 +13,4 @@ module.exports = {
   ogSiteName: 'blogs.h4harshit',
   ogLanguage: 'en_US'
 }
+// -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
