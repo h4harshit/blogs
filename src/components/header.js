@@ -7,7 +7,7 @@ const HeaderContainer = styled.div`
   background: #e67070;
   height: 5rem;
   padding-top: 1.5rem;  
-  margin-bottom: 2rem;
+  //margin-bottom: 2rem;
 `
 const LinkContainer = styled.h2`
   padding-left: 2rem;

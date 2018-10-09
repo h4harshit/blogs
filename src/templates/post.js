@@ -7,14 +7,18 @@ import theme from '../../config/Theme'
 import '../utils/prismjs-theme.css'
 import { media } from '../utils/media'
 import SEO from  '../components/SEO'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import config from '../../config/SiteConfig'
 
 const Content = styled.article`
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: ${theme.colors.white};;
 `
 
 const Title = styled.h3`
   margin-bottom: 1rem;
+  padding-top: 2rem;
   color: ${theme.colors.primary};
   @media ${media.phone} {
     font-size: 14px;
@@ -25,7 +29,7 @@ const Title = styled.h3`
 `
 
 const PostContent = styled.div`
-  margin-top: 1rem;
+  // margin-top: 1rem;
   text-align: justify;
   @media ${media.phone} {
     font-size: 14px;
@@ -41,6 +45,8 @@ const Post = props => {
   const post = postNode.frontmatter
 
   return (
+    <div>
+    <Header siteTitle={config.siteTitle} />
     <Layout>
       <SEO postPath={slug} postNode={postNode} postSEO />
       <Content>
@@ -49,6 +55,8 @@ const Post = props => {
         <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
       </Content>
     </Layout>
+    <Footer />
+    </div>
   )
 }
 
