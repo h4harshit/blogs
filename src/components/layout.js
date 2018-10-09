@@ -55,7 +55,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <SEO />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div
           style={{
             margin: '0 auto',
@@ -66,7 +66,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </LayoutContainer>
     )}
   />
