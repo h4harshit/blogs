@@ -13,11 +13,17 @@ import config from '../../config/SiteConfig'
 
 const Content = styled.article`
   padding: 1rem 2rem;
-  background-color: ${theme.colors.white};;
+  background-color: ${theme.colors.white};
+`
+
+const MetaData = styled.div`
+ margin-top: 0;
+ font-size: 12px;
+ color: ${theme.colors.grey_dark};
 `
 
 const Title = styled.h4`
-  margin-bottom: 1rem;
+  margin-bottom: 2px;
   padding-top: 2rem;
   color: ${theme.colors.primary};
   @media ${media.phone} {
@@ -29,7 +35,7 @@ const Title = styled.h4`
 `
 
 const PostContent = styled.div`
-  // margin-top: 1rem;
+  margin-top: 1rem;
   text-align: justify;
   @media ${media.phone} {
     font-size: 14px;
@@ -51,7 +57,7 @@ const Post = props => {
       <SEO postPath={slug} postNode={postNode} postSEO />
       <Content>
         <Title>{post.title}</Title>
-        {post.date} &mdash; {postNode.timeToRead} mins read
+        <MetaData> {post.date} &mdash; {postNode.timeToRead} mins read </MetaData>
         <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
       </Content>
     </Layout>
