@@ -10,4 +10,6 @@ In this article we are going to create a login screen using Flutter framework. T
 
 Let's first have a look as to, what we are going to build in this article. Below is the screen from an Android mobile which will be developing. 
 
-<< Image here >> 
+![alt text](https://raw.githubusercontent.com/h4harshit/blogs/master/blogs/flutter/img/Flutter_Login_screen.png " Flutter Building login screen")
+
+
